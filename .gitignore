@@ -1,0 +1,10 @@
+.build/
+DerivedData/
+*.xcarchive
+
+.DS_Store
+xcuserdata/
+*.xcuserstate
+
+*.pdf
+*.PDF

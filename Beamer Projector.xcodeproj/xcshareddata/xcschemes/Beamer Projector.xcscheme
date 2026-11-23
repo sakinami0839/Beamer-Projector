@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme LastUpgradeVersion="2720" version="1.7">
+   <BuildAction parallelizeBuildables="YES" buildImplicitDependencies="YES">
+      <BuildActionEntries>
+         <BuildActionEntry buildForTesting="YES" buildForRunning="YES" buildForProfiling="YES" buildForArchiving="YES" buildForAnalyzing="YES">
+            <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="24695E495C54DDE52AEB6347" BuildableName="Beamer Projector.app" BlueprintName="Beamer Projector" ReferencedContainer="container:Beamer Projector.xcodeproj"/>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction buildConfiguration="Debug" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.DebuggerFoundation.Launcher.LLDB" shouldUseLaunchSchemeArgsEnv="NO">
+      <Testables>
+         <TestableReference skipped="NO" parallelizable="NO">
+            <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="0D1F22E348E72377B36F9778" BuildableName="BeamerProjectorTests.xctest" BlueprintName="BeamerProjectorTests" ReferencedContainer="container:Beamer Projector.xcodeproj"/>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction buildConfiguration="Debug" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.DebuggerFoundation.Launcher.LLDB" launchStyle="0" useCustomWorkingDirectory="NO" ignoresPersistentStateOnLaunch="NO" debugDocumentVersioning="YES" debugServiceExtension="internal" allowLocationSimulation="NO">
+      <BuildableProductRunnable runnableDebuggingMode="0">
+         <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="24695E495C54DDE52AEB6347" BuildableName="Beamer Projector.app" BlueprintName="Beamer Projector" ReferencedContainer="container:Beamer Projector.xcodeproj"/>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction buildConfiguration="Release" shouldUseLaunchSchemeArgsEnv="YES" savedToolIdentifier="" useCustomWorkingDirectory="NO" debugDocumentVersioning="YES">
+      <BuildableProductRunnable runnableDebuggingMode="0">
+         <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="24695E495C54DDE52AEB6347" BuildableName="Beamer Projector.app" BlueprintName="Beamer Projector" ReferencedContainer="container:Beamer Projector.xcodeproj"/>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction buildConfiguration="Debug"/>
+   <ArchiveAction buildConfiguration="Release" revealArchiveInOrganizer="YES"/>
+</Scheme>

@@ -1,0 +1,6 @@
+PRODUCT_NAME = BeamerProjectorTests
+PRODUCT_BUNDLE_IDENTIFIER = org.beamerprojector.macos.tests
+GENERATE_INFOPLIST_FILE = YES
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/Beamer Projector.app/Contents/MacOS/BeamerProjector
+BUNDLE_LOADER = $(TEST_HOST)
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @loader_path/../Frameworks

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" fill="none">
+  <defs>
+    <!-- Full-bleed background for macOS 26+ automatic squircle mask -->
+    <linearGradient id="bg" x1="512" y1="0" x2="512" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#283248"/>
+      <stop offset="100%" stop-color="#111622"/>
+    </linearGradient>
+
+    <!-- Ambient projector glow behind slide -->
+    <radialGradient id="glow" cx="512" cy="450" r="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.34"/>
+      <stop offset="58%" stop-color="#2563EB" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Projection beam cone from bottom projector lens -->
+    <linearGradient id="beam" x1="512" y1="864" x2="512" y2="635" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0.54"/>
+      <stop offset="48%" stop-color="#60A5FA" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Lens glow -->
+    <radialGradient id="lensGlow" cx="512" cy="866" r="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#BAE6FD" stop-opacity="0.88"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Projected slide card -->
+    <linearGradient id="slideBg" x1="512" y1="186" x2="512" y2="674" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EDF2F8"/>
+    </linearGradient>
+
+    <!-- Warm amber highlighter annotation -->
+    <linearGradient id="highlight" x1="202" y1="574" x2="574" y2="574" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE047" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.74"/>
+    </linearGradient>
+
+    <filter id="slideShadow" x="80" y="140" width="864" height="608" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#04070F" flood-opacity="0.50"/>
+    </filter>
+
+    <clipPath id="slideClip">
+      <rect x="142" y="186" width="740" height="488" rx="34"/>
+    </clipPath>
+  </defs>
+
+  <!-- Full-bleed dark backdrop -->
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Ambient projection light -->
+  <circle cx="512" cy="450" r="440" fill="url(#glow)"/>
+
+  <!-- Projection beam cone -->
+  <polygon points="452,864 572,864 858,642 166,642" fill="url(#beam)"/>
+  <circle cx="512" cy="866" r="56" fill="url(#lensGlow)"/>
+
+  <!-- Floating projected 16:9 slide -->
+  <g filter="url(#slideShadow)">
+    <rect x="142" y="186" width="740" height="488" rx="34" fill="url(#slideBg)"/>
+  </g>
+
+  <!-- Clean presentation slide layout -->
+  <g clip-path="url(#slideClip)">
+    <!-- Academic accent bar + slide title -->
+    <rect x="204" y="246" width="14" height="62" rx="7" fill="#2563EB"/>
+    <rect x="240" y="248" width="306" height="28" rx="14" fill="#1E293B" fill-opacity="0.82"/>
+    <rect x="240" y="290" width="180" height="14" rx="7" fill="#64748B" fill-opacity="0.45"/>
+
+    <!-- Left column text stubs -->
+    <rect x="204" y="364" width="276" height="20" rx="10" fill="#94A3B8" fill-opacity="0.52"/>
+    <rect x="204" y="408" width="232" height="20" rx="10" fill="#94A3B8" fill-opacity="0.42"/>
+    <rect x="204" y="452" width="256" height="20" rx="10" fill="#94A3B8" fill-opacity="0.42"/>
+
+    <!-- Right column minimal chart visual -->
+    <rect x="528" y="354" width="292" height="180" rx="22" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="4"/>
+    <rect x="574" y="444" width="40" height="58" rx="10" fill="#93C5FD"/>
+    <rect x="638" y="406" width="40" height="96" rx="10" fill="#60A5FA"/>
+    <rect x="702" y="380" width="40" height="122" rx="10" fill="#2563EB"/>
+
+    <!-- Harmonious warm highlighter & smooth hand-drawn blue underline -->
+    <rect x="198" y="544" width="374" height="42" rx="12" fill="url(#highlight)"/>
+    <rect x="218" y="557" width="308" height="16" rx="8" fill="#1E293B" fill-opacity="0.58"/>
+    <path d="M 212 608 C 310 598, 444 598, 570 604" stroke="#2563EB" stroke-width="11" stroke-linecap="round"/>
+  </g>
+
+  <!-- Subtle bright edge on projected slide -->
+  <rect x="143.5" y="187.5" width="737" height="485" rx="32.5" stroke="#FFFFFF" stroke-opacity="0.72" stroke-width="3"/>
+
+  <!-- Minimal projector emitter pill at bottom -->
+  <rect x="428" y="848" width="168" height="36" rx="18" fill="#0B0F18" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2.5"/>
+  <circle cx="512" cy="866" r="8.5" fill="#7DD3FC"/>
+  <circle cx="512" cy="866" r="4" fill="#FFFFFF"/>
+</svg>
